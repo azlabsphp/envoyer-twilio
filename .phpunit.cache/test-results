@@ -1,1 +1,1 @@
-{"version":1,"defects":{"TwilioAdapterTest::test_twilio_send_request":5},"times":{"TwilioAdapterTest::test_twilio_send_request":0.01}}
+{"version":1,"defects":{"TwilioAdapterTest::test_twilio_send_request":5},"times":{"TwilioAdapterTest::test_twilio_send_request":0.007}}

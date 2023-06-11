@@ -1,5 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the drewlabs namespace.
+ *
+ * (c) Sidoine Azandrew <azandrewdevelopper@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Drewlabs\Envoyer\Drivers\Twilio;
 
 use Twilio\Rest\Api\V2010\Account\MessageInstance;
@@ -12,9 +23,7 @@ class TwilioMessageInstanceAdapter implements MessageIntanceInterface
     private $instance;
 
     /**
-     * Creates adapter instance
-     * 
-     * @param MessageInstance $instance 
+     * Creates adapter instance.
      */
     public function __construct(MessageInstance $instance)
     {

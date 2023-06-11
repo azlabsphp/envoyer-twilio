@@ -1,5 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the drewlabs namespace.
+ *
+ * (c) Sidoine Azandrew <azandrewdevelopper@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Drewlabs\Envoyer\Drivers\Twilio\Testing;
 
 /**
@@ -10,13 +21,11 @@ namespace Drewlabs\Envoyer\Drivers\Twilio\Testing;
 class TwilioClient
 {
     /**
-     * 
      * @var string
      */
     private $username;
 
     /**
-     * 
      * @var string
      */
     private $password;
@@ -27,23 +36,21 @@ class TwilioClient
     private $messages;
 
     /**
-     * Creates class instance
-     * 
-     * @param string $username 
-     * @param string $password 
+     * Creates class instance.
      */
     public function __construct(string $username, string $password)
     {
         $this->username = $username;
         $this->password = $password;
-        $this->messages = new TwilioMessages;
+        $this->messages = new TwilioMessages();
     }
 
     /**
-     * PHP properties accessor magic method
-     * 
-     * @param mixed $name 
-     * @return mixed 
+     * PHP properties accessor magic method.
+     *
+     * @param mixed $name
+     *
+     * @return mixed
      */
     public function __get($name)
     {

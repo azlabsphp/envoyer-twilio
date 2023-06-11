@@ -1,8 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
+/*
+ * This file is part of the drewlabs namespace.
+ *
+ * (c) Sidoine Azandrew <azandrewdevelopper@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Drewlabs\Envoyer\Drivers\Twilio\Testing;
 
-use DateTimeInterface;
 use Drewlabs\Envoyer\Drivers\Twilio\MessageIntanceInterface;
 
 class MessageInstance implements MessageIntanceInterface
@@ -13,12 +23,11 @@ class MessageInstance implements MessageIntanceInterface
     private $id;
 
     /**
-     * @var DateTimeInterface
+     * @var \DateTimeInterface
      */
     private $at;
 
     /**
-     * 
      * @var string
      */
     private $body;
@@ -29,12 +38,9 @@ class MessageInstance implements MessageIntanceInterface
     private $statusCode;
 
     /**
-     * Creates class instance
-     * 
-     * @param int $id 
-     * @param DateTimeInterface $at 
-     * @param string $body
-     * @param int $statusCode 
+     * Creates class instance.
+     *
+     * @param int $statusCode
      */
     public function __construct(int $id, \DateTimeInterface $at, string $body, $statusCode = 200)
     {

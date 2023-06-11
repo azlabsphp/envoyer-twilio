@@ -2,6 +2,10 @@
     "name": "drewlabs/envoyer-twilio",
     "description": "Twilio driver for envoyer client",
     "type": "library",
+    "keywords": [
+        "twilio",
+        "envoyer"
+    ],
     "require-dev": {
         "drewlabs/envoyer": "^0.2.2",
         "phpunit/phpunit": ">=6.0"
@@ -21,6 +25,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "php": ">=7.0",
+        "drewlabs/envoyer-contracts": "^0.2.0",
         "twilio/sdk": "^6.0|^7.4"
     },
     "config": {

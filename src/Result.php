@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the Drewlabs package.
+ * This file is part of the drewlabs namespace.
  *
  * (c) Sidoine Azandrew <azandrewdevelopper@gmail.com>
  *
@@ -23,9 +23,7 @@ class Result implements NotificationResult
     private $message;
 
     /**
-     * Creates class instance
-     * 
-     * @param MessageIntanceInterface $message
+     * Creates class instance.
      */
     public function __construct(MessageIntanceInterface $message)
     {

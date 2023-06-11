@@ -19,6 +19,6 @@ class TwilioMessages
     {
         $body = sprintf('Message %s -> %s: %s', $options['From'] ?? '', $to, $options['Body']);
 
-        return new MessageInstance(time().random_int(1000, 100000), new \DateTimeImmutable(), $body, 200);
+        return new MessageInstance(intval(sprintf("%s%s", time(), random_int(1000, 100000))), new \DateTimeImmutable(), $body, 200);
     }
 }

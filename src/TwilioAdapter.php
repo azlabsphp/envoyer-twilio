@@ -50,7 +50,7 @@ class TwilioAdapter implements ClientInterface
      */
     public static function new(string $client, string $secret)
     {
-        return new static(new ClientSecretKey($client, $secret));
+        return new static(new ClientSecretKeyServer($client, $secret));
     }
 
     /**

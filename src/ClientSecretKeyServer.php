@@ -15,7 +15,7 @@ namespace Drewlabs\Envoyer\Drivers\Twilio;
 
 use Drewlabs\Envoyer\Contracts\ClientSecretKeyAware;
 
-class ClientSecretKey implements ClientSecretKeyAware
+class ClientSecretKeyServer implements ClientSecretKeyAware
 {
     /**
      * @var string|null
